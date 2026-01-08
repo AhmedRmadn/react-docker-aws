@@ -3,6 +3,6 @@ services:
   - docker
 
 before_install:
-  - docker build -t myusername/myrepo:latest -f Dockerfile.dev .
+  - docker build -t ahmedramadan/react-docker-aws:latest -f Dockerfile.dev .
 script:
-  - docker run myusername/myrepo:latest npm run test -- --coverage
+  - docker run ahmedramadan/react-docker-aws:latest npm run test -- --coverage
