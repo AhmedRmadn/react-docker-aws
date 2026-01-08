@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t ahmedramadan/react-docker-aws:latest -f Dockerfile.dev .
 script:
-  - docker run ahmedramadan/react-docker-aws:latest npm run test -- --coverage
+  - docker run -e CI=true ahmedramadan/react-docker-aws:latest npm run test -- --coverage
